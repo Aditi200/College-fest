@@ -57,6 +57,13 @@ smalltext{
   
   text-shadow: 1px 1px 10px 500%;
 }*/
+
+.carousel-caption
+{
+  position:absolute;
+  top:10%;
+  
+}
 .social a{
   font-size: 10em;
   padding:10rem;
@@ -81,6 +88,7 @@ smalltext{
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="img/logo.png">Culture Fest</a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
       <span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -103,10 +111,16 @@ smalltext{
       <li class="nav-item">
       <a class="navbar-brand" href="about.html" active>About</a>
       </li>
+      <li>
+      <div style="margin-top:0px;">
+<a href="#"><i class="fa fa-facebook-f"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a></div></li>
       </ul> 
 
       </div>
       </div>
+
   </nav>
     <div id="slides" class="carousel slide" data-ride="carousel">
       <ul class="carousel-indicators">
@@ -118,7 +132,7 @@ smalltext{
         <div class="carousel-item active">
           <img src="img/best.jpg">
           <div class="carousel-caption">
-            <h1 class="display-4">Come celebrate the<br>unique flavors of diversity</h1>  <button type="button" class="btn btn-warning btn-lg">REGISTER</button>
+            <h1 class="display-4" >Come celebrate the<br>unique flavors of diversity</h1>  <button type="button" class="btn btn-warning btn-lg">REGISTER</button>
 
 <div id="clockdiv"> 
   
@@ -139,10 +153,7 @@ smalltext{
     <div class="smalltext">Seconds</div> 
   </div> 
 </div> 
-<div style="margin-top: 250px;">
-<a href="#"><i class="fa fa-facebook-f"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a></div>
+
 <script> 
   
 var deadline = new Date("dec 31, 2020 15:37:25").getTime(); 

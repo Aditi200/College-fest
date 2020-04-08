@@ -197,6 +197,7 @@ function carousel() {
    <title>Sign page</title>
    <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -219,38 +220,61 @@ function carousel() {
       -moz-box-shadow:-1px 4px 26px 11px rgba(0,0,0,0.75);
       box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
     }
+    .social a{
+  font-size: 10em;
+  padding:10rem;
+}
+.fa-facebook-f{
+  size: 100px;
+  color: blue;
+}
+.fa-twitter{
+  color: #00aced;
+}
+.fa-instagram
+{
+  color:pink;
+}
+
   </style>
  </head>
  <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="img/logo.png">Culture Fest</a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
       <span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-      <a class="nav-link" href="main.html" active>Home</a>
+      <a class="navbar-brand" href="main.html" active>Home</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="main.html" active>Major Events</a>
+      <a class="navbar-brand" href="event.html" active>Major Events</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="main.html" active>Fun Events</a>
+      <a class="navbar-brand" href="fun.html" active>Fun Events</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="main.html" active>Register</a>
+      <a class="navbar-brand" href="sign.html" active>Register</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="main.html" active>Contact</a>
+      <a class="navbar-brand" href="contact.html" active>Contact</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="main.html" active>About</a>
+      <a class="navbar-brand" href="about.html" active>About</a>
       </li>
+      <li>
+      <div style="margin-top:0px;">
+<a href="#"><i class="fa fa-facebook-f"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a></div></li>
       </ul> 
 
       </div>
       </div>
+
   </nav>
  <div class="container-fluid bg">
   <div class="row">

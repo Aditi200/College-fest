@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
 <title>Sign in</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
-<style>
-.mySlides {display:none;}
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style> -->
+<!-- /*.mySlides {display:none;}
 body{
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body{
     background-position: center;
     font-family: sans-serif;
 background-image: url('img/f.jpg');
-background-size: auto;
+background-size: auto;*/
   /*min-height : 100%;
   min-width : 100%;
   background-size:100% 100%;
@@ -28,7 +28,7 @@ background-size: auto;
   overflow-x: hidden;*/
  
 
-}
+/*}
 .login-box{
     width: auto;
     height: auto;
@@ -58,7 +58,7 @@ h1{
 }
 .login-box input{
    /* width: 100%;*/
-    margin-bottom: 10px;
+  /*  margin-bottom: 10px;
 }
 .login-box input[type="name"],input[type="email"],input[type="phone"], input[type="event"]
 {
@@ -69,7 +69,7 @@ h1{
     height: 40px;
     color: #fff;
     font-size: 16px;
-}
+}*/
 /*#events
 {
  border: none;
@@ -80,7 +80,7 @@ h1{
     color:black;
     font-size: 16px; 
 
-}*/
+}
 .login-box input[type="submit"]
 {
     border: none;
@@ -123,14 +123,23 @@ i {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
-
+*/
 
 </style>
 </head>
-
-<body>
-  <a href="main.html"><i class="left" style="margin-top: 30px;margin-left: 20px;"></i></a>
-<!-- <div class="w3-content w3-section" style="max-width:6000px">
+ -->
+<!-- <body>
+<div id="slides" class="carousel slide" data-ride="carousel">
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+         
+          <img class="mySlides" src="img/m.jpg" style="width:100%;height:100%;">
+  <img class="mySlides" src="img/f.jpg" style="max-width:100%;height:auto;">
+  <img class="mySlides" src="img/s.jpg" style="max-width:100%;height:auto;">
+</div></div></div> -- >
+ <!--  <a href="main.html"><i class="left" style="margin-top: 30px;margin-left: 20px;"></i></a>
+<div class="w3-content w3-section" style="max-width:6000px">
 
   <img class="mySlides" src="img/m.jpg" style="width:100%;height:100%;">
   <img class="mySlides" src="img/f.jpg" style="max-width:100%;height:auto;">
@@ -151,7 +160,7 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 2500); // Change image every 2 seconds
 }
-</script> -->
+</script>
 <div class="login-box">
 
         <h1>Register Here</h1>
@@ -181,3 +190,78 @@ function carousel() {
         </div>
 </body>
 </html>
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>Sign page</title>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+    *
+    {
+      color: #fff;
+    }
+    .bg{
+      background:url(img/m.jpg) no-repeat; width: 100%;height: 100%;
+      background-size: cover;
+    }
+    .form-container
+    {
+      border:0px solid #fff;
+      padding: 50px 60px;
+      margin-top: 20%;
+      -webkit-box-shadow:-1px 4px 26px 11px rgba(0,0,0,0.75);
+      -moz-box-shadow:-1px 4px 26px 11px rgba(0,0,0,0.75);
+      box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    }
+  </style>
+ </head>
+ <body>
+ <div class="container-fluid bg">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-12"></div>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+
+        <form class="form-container"action="main.html">
+          <h1 style="color: black; text-align: center;">REGISTER HERE</h1>
+          <div class="form-group">
+              <label for="Iname">Name</label>
+              <input type="name" class="form-control" id="Iname" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+              <label for="Iemail">Email</label>
+              <input type="email" class="form-control" id="Iemail" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+              <label for="Iphone">Mobile no.</label>
+              <input type="number" class="form-control" id="Iphone" placeholder="Enter Mobile number">
+            </div>
+           <label for="Imajor">Major Events</label><br>
+           <div class="checkbox">
+<label><input type="checkbox" value="Modelling">Modelling</label><br>
+<label><input type="checkbox" value="Bhangra">Bhangra(Punjab)</label><br>
+<label><input type="checkbox" value="Nati">Nati(Himachal Pradesh)</label><br>
+<label><input type="checkbox" value="Bihu Dance">Bihu Dance(Assam)</label><br></div>
+  <input type="Imajor" class="form-control" placeholder="Other">
+          <label for="Ifun">Fun Events</label><br>
+          <div class="checkbox">
+<label><input type="checkbox" value="RingOlevio">RingOlevio</label><br>
+<label><input type="checkbox" value="Dekha-Andekha">Dekha-Andekha</label><br>
+<label><input type="checkbox" value="Tic-Tac-Toe">Tic-Tac-Toe</label><br>
+<label><input type="checkbox" value="Open-Mic">Open-Mic</label><br>
+<label><input type="checkbox" value="Tambola">Tambola</label><br>
+<label><input type="checkbox" value="Zorbing" >Zorbing</label></div>
+<button type="submit" class="btn btn-warning btn-block">Submit</button> 
+            </form>   
+
+    </div>
+  </div class="col-md-4 col-sm-4 col-xs-12"></div>
+</div>
+</div>
+ </body>
+ </html>

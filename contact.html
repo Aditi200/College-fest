@@ -1,139 +1,4 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<title>Contact Us</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-	body
-	{
-		background:black;
-		font-family: poppins;
-	}
-	.wrapper
-	{
-		width: 1170px;
-		margin:2% auto;
-	}
-	.section-header
-	{
-		text-align: center;
-		margin-bottom: 30px;
-	}
-	.section-header h2
-	{
-		text-transform: uppercase;
-		margin:0;
-		color: #fff;
-		font-size:45px;
-		letter-spacing: 5px;
-	}
-	.team-member
-	{
-		width: 29%;
-		height: auto;
-		float: left;
-		box-shadow: 5px 5px 15px #000;
-		position: relative;
-		display: block;
-		overflow: hidden;
-		padding: 15px;
-		text-align: center;
-		margin:0 5px;
-		background:red;
-	}
-	.team-member img
-	{
-		width: 100%;
-	}
-	.team-member h3
-	{
-		margin:0;
-		text-transform: uppercase;
-		font-size: 25px;
-		color: #fff;
-	}
-	.team-member p
-	{
-		color: #fff;
-	}
-	.team-member:before{
-		position: absolute;
-		content: '';
-		left: 0;
-		bottom: 0;
-		height: 4px;
-		width: 100%;
-		border-bottom: 4px solid transparent;
-		border-left: 4px solid transparent;
-		box-sizing: border-box;
-		transform: translateX(100%);
-	}
-	.team-member:after{
-		position: absolute;
-		content: '';
-		left: 0;
-		top: 0;
-		height: 4px;
-		width: 100%;
-		border-top: 4px solid transparent;
-		border-right: 4px solid transparent;
-		box-sizing: border-box;
-		transform: translateX(-100%);
-	}
-	.team-member:hover:before{
-		border-color: white;
-		height: 100%;
-		transform: translateX(0);
-		transition: .3s transform linear, .3s height linear .3s;
-	}
-	.team-member:hover:after{
-		border-color: white;
-		height: 100%;
-		transform: translateX(0);
-		transition: .3s transform linear, .3s height linear .5s;
-	}
-	i {
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  margin-left: 10px;
-}
 
-
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-</style>
-</head>
-<body>
-	 <a href="main.html"><p><i class="left"></i></p></a>
-<div class="wrapper">
-	<div class="section-header">
-		<h2>Our Team Memebers</h2>
-</div>
-<div class="team-member" style="margin-left: 200px;">
-	<img src="img/sumit.jfif" width="100px" height="500px">
-	<h3>Sumit Budhiraja</h3>
-	<p>Fest Head</p>
-	
-</div>
-<div class="team-member">
-	<img src="img/ag7gj-qlm5a.jpg" width="100px" height="500px">
-	<h3>Aditi Gupta</h3>
-	<p>Fest Head</p>
-	
-</div>
-<h1 style="color: white;margin-top: 670px;margin-left: 500px;">Contact Us</h1>
-<textarea rows="2" cols="50" style="margin-left: 400px;" placeholder="Enter Name"></textarea><br>
-<textarea rows="2" cols="50" style="margin-left: 400px;" placeholder="Enter Email"></textarea><br>
-<textarea rows="7" cols="50" style="margin-left: 400px;margin-top: 10px;" placeholder="Message"></textarea><br>
-<button style="margin-left: 500px;color: white;background-color: red;font-size: 20px;">Send Message</button>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -218,13 +83,6 @@
 }
 
 
-/*@media only screen and(max-width: 990px)
-{
-	.box
-	{
-		margin-bottom: 30px;
-	}
-}*/
 .social a{
   font-size: 10em;
   padding:10rem;
@@ -240,9 +98,30 @@
 {
   color:pink;
 }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: black;
+}
+
   </style>
 </head>
 <body style="background-color: black;">
+	  <button onclick="topFunction()" id="myBtn" title="Go to top">^</button> 
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="img/logo.png">Culture Fest</a>
@@ -285,12 +164,6 @@
       <div style="font-size: 2.5rem;color: white;text-align: center;">OUR TEAM</div><br>
     </div></div>
 
-	
-   <!--  <div class="col-md-4 col-sm-6">
-      <div style="font-size: 2.5rem;color: white;text-align: center;">OUR TEAM</div><br>
-    </div>
- 
-</div>-->
 <div class="container">
 	<div class="row">
 		<div class="col-md-4 col-sm-6">
@@ -313,23 +186,7 @@
 			</div>
 		</div>
 	</div> 
-	<!-- <div class="col-md-4 col-sm-6">
-		
-			<div class="box">
-			<h1 style="color: black;">Contact Us</h1>
-			<div class="col-sm-4">
-				<textarea rows="2" cols="45" placeholder="Enter Name" ></textarea>
-			</div>
-			<div class="col-md-4">
-				<textarea rows="2" cols="45" placeholder="Enter Email"></textarea>
-			</div>
-			<div class="col-md-4">
-				<textarea rows="7" cols="45" placeholder="Message"></textarea></div>
-			
-		<div class="col-md-12">
-			<button type="button" class="btn btn-dark" >Send Message</button>
-		</div>	
-			</div> -->
+	
 			<div class="col-md-4 col-sm-6">
 				<div class="box">
 					<form>
@@ -343,5 +200,26 @@
 			</div>
 </div>
 </div>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>
